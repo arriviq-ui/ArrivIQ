@@ -472,6 +472,7 @@ footer{padding:2.5rem 3.5rem;border-top:1px solid var(--bd);display:flex;align-i
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init("ztrRZXBSBsHEfD2id");</script>
 <script>
 // ── VIVID CINEMATIC CANVAS ────────────────────────────────────────────────
 (function(){
@@ -1584,7 +1585,7 @@ async function bookDemo(){
 
   // ── 1. SEND EMAIL via EmailJS ──────────────────────────────────────────────
   try {
-    if(EMAILJS_PUBLIC_KEY !== "ztrRZXBSBsHEfD2id") {
+    if(EMAILJS_PUBLIC_KEY) {
       await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, bookingData, EMAILJS_PUBLIC_KEY);
       emailOK = true;
     }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arriviq-ui.github.io/ArrivIQ/sitemap.xml
